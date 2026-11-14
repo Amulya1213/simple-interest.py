@@ -1,9 +1,7 @@
-def simple_interest(principal, interest, time):
-    return (principal * interest * time) / 100
+pr = int(input("Enter principal: "))
+rt = int(input("Enter rate: "))
+tm = int(input("Enter time: "))
 
+si = (pr * rt * tm) / 100
 
-if __name__ == "__main__":
-    p = int(input("enter principal amt: "))
-    i = float(input("enter interest: "))
-    t = int(input("enter time in months: "))
-    print("simple interest is ", simple_interest(p, i, t))
+print("Simple interest:", si)
